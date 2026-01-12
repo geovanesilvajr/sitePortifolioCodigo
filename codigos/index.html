@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Geovane Dev</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <nav class="container-header">
+        <div class="logo-div">
+          <a href="./index.html"
+            ><img class="logo" src="logo.png" alt="Logo do site" />Geovane Jr</a
+          >
+        </div>
+
+        <ul class="menu-link">
+          <li class="menu-link"><a href="#main-home">Home</a></li>
+          <li class="menu-link"><a href="#sobre-container">Sobre</a></li>
+          <li class="menu-link"><a href="#formacao-container">Formação</a></li>
+          <li class="menu-link">
+            <a href="#portifolio-container">Portifólio</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="btn-header"><a href="#contato-container">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main-home" id="main-home">
+      <section class="container-home">
+        <div class="container-text">
+          <div class="text-home">
+            <h1>Desenvolvedor Front-end</h1>
+            <p>
+              "Sou um desenvolvedor front-end com um foco incansável em design e
+              excelência técnica. Minha paixão é construir interfaces web que
+              não apenas pareçam boas, mas também sejam rápidas, intuitivas e
+              acessíveis.
+            </p>
+          </div>
+        </div>
+        <div class="img-home">
+          <img class="img-home" src="img-home.png" alt="Imagem Perfil" />
+        </div>
+      </section>
+    </main>
+
+    <!--SOBRE-->
+    <section class="sobre-container" id="sobre-container">
+      <div class="text-sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+          Olá! Sou um desenvolvedor web que respira a criação de experiências
+          digitais. Minha missão é traduzir ideias complexas em interfaces
+          intuitivas e de alta performance. Com foco em desenvolvimento
+          front-end moderno, otimização de performance, acessibilidade, estou
+          sempre buscando as melhores práticas e inovações para entregar
+          produtos digitais que superem as expectativas. Acredito que cada pixel
+          e cada linha de código devem servir a um propósito, unindo estética e
+          funcionalidade.
+        </p>
+      </div>
+    </section>
+
+    <!--FORMAÇÃO-->
+    <section class="formacao-container" id="formacao-container">
+      <div class="text-formacao">
+        <h2>Formação e Habilidades</h2>
+        <p>
+          Cursando Análise e Desenvolvimento de Sistemas <br />
+          Inglês intermediário <br />
+          HTML | CSS | Javascript | Python
+        </p>
+      </div>
+    </section>
+
+    <!--PORTIFOLIO-->
+    <section class="portifolio-container" id="portifolio-container">
+      <div class="text-portifolio">
+        <h2>Meu Portifólio</h2>
+      </div>
+
+      <div class="portifolio-cards">
+        <!--CARD 1-->
+        <div class="card-container">
+          <a
+            href="https://github.com/geovanesilvajr/site-pet-care"
+            target="_blank"
+          >
+            <div>
+              <img
+                class="img-projeto"
+                src="pet-care.jpeg.PNG"
+                alt="Home site Pet Care"
+              />
+            </div>
+            <p class="text-projeto">Home site Pet Care</p>
+          </a>
+        </div>
+
+        <!--CARD 2-->
+        <div class="card-container">
+          <a
+            href="https://github.com/geovanesilvajr/insta-page"
+            target="_blank"
+          >
+            <div>
+              <img
+                class="img-projeto"
+                src="instagram.jpeg"
+                alt="Imagem projeto calculadora"
+              />
+            </div>
+            <p class="text-projeto">Projeto Home Instagram</p>
+          </a>
+        </div>
+
+        <!--CARD 3-->
+        <div class="card-container">
+          <a href="//github.com/geovanesilvajr/calculadora-imc" target="_blank">
+            <div>
+              <img
+                class="img-projeto"
+                src="calculadora-imc.png"
+                alt="Imagem projeto calculadora"
+              />
+            </div>
+            <p class="text-projeto">Projeto Calculadora IMC</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTATO-->
+    <section class="contato-container" id="contato-container">
+      <div class="contato-div">
+        <div class="text-contato">
+          <h2>Entre em contato</h2>
+        </div>
+
+        <div class="formulario-container">
+          <div>
+            <form class="formulario-contato" action="#">
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" />
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem"></textarea>
+              <button
+                class="btn-enviar"
+                type="submit"
+                name="enviar"
+                id="enviar"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

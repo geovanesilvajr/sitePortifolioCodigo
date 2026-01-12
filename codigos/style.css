@@ -1,0 +1,410 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --azul-1: #001d5c;
+  --azul-2: #001542;
+  --azul-3: #000d29;
+  --amarelo-1: #ffc70d;
+  --amarelo-2: #ffb30d;
+  --amarelo-3: #ff9f0d;
+  --branco-1: #fefffe;
+  --branco-2: #ffffff;
+  --branco-3: #f5f5f5;
+}
+
+body {
+  background-color: var(--azul-3);
+  min-height: 100vh;
+  scroll-margin-top: 80px;
+}
+body a,
+h1,
+h2,
+p {
+  color: var(--branco-2);
+}
+
+/*CABEÇALHO*/
+
+.header {
+  background-color: var(--azul-2);
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.container-header {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.menu-link a {
+  text-decoration: none;
+}
+
+.logo-div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.logo {
+  width: 48px;
+  border-radius: 50%;
+}
+.btn-header {
+  background-color: var(--amarelo-2);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+.btn-header a,
+ul,
+li {
+  text-decoration: none;
+  color: var(--azul-2);
+  list-style: none;
+}
+
+/*HOME*/
+
+.main-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  min-height: 100vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.container-home {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+  padding-top: 80px;
+}
+
+.container-text {
+  max-width: 500px;
+}
+
+.text-home h1,
+p {
+  padding: 1rem;
+}
+
+.text-home h1 {
+  font-size: 2rem;
+}
+
+.img-home {
+  width: 210px;
+  height: auto;
+  justify-content: center;
+  object-fit: cover;
+}
+
+/*SOBRE*/
+.sobre-container {
+  background-color: var(--azul-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.text-sobre h2 {
+  font-size: 32px;
+}
+
+.text-sobre h2,
+p {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*FORMAÇÃO*/
+.formacao-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.text-formacao {
+  max-width: 600px;
+}
+.text-formacao h2,
+p {
+  text-align: center;
+}
+
+.text-formacao p {
+  line-height: 2rem;
+}
+.text-formacao h2 {
+  font-size: 32px;
+}
+
+/*PORTIFOLIO*/
+
+.portifolio-container {
+  background-color: var(--azul-2);
+  min-width: 100%;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.portifolio-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.text-portifolio h2 {
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.card-container {
+  background-color: var(--branco-2);
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  overflow: hidden;
+}
+.card-container p {
+  color: var(--azul-3);
+}
+
+.img-projeto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*CONTATO*/
+.contato-container {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-contato {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.formulario-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.formulario-contato {
+  background-color: var(--azul-2);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2rem;
+  width: 400px;
+}
+
+.formulario-contato label,
+.formulario-contato input,
+.formulario-contato textarea,
+.formulario-contato button {
+  display: block;
+  width: 100%;
+}
+
+.formulario-contato label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  color: var(--branco-2);
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario-contato input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.formulario-contato input .formulario-contato textarea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  color: var(--branco-2);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.formulario-contato textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: vertical;
+  margin-bottom: 0.5rem;
+}
+
+.formulario-contato button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--amarelo-3);
+  padding: 0.5rem;
+  font-size: 1.125rem;
+  color: var(--azul-2);
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 320px) {
+  .main-home {
+    min-height: calc(100vh - 80px);
+  }
+
+  .menu-link {
+    gap: 0.5rem;
+  }
+
+  .menu-link a {
+    font-size: 90%;
+  }
+
+  .logo-div a {
+    display: none;
+  }
+
+  .logo {
+    width: 36px;
+  }
+
+  .btn-header {
+    padding: 0.3rem 0.7rem;
+  }
+
+  .btn-header a,
+  ul,
+  li {
+    font-size: 90%;
+  }
+
+  .text-home h1 {
+    text-align: center;
+  }
+
+  .text-sobre h2 {
+    font-size: 24px;
+  }
+  .text-sobre p {
+    font-size: 80%;
+  }
+
+  .portifolio-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+  }
+
+  .formulario-contato {
+    width: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-div a {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo-div a {
+    font-size: 70%;
+  }
+
+  .main-home {
+    min-height: calc(100vh - 80px);
+  }
+
+  .menu-link {
+    gap: 0.5rem;
+  }
+
+  .menu-link a {
+    font-size: 90%;
+  }
+
+  .logo {
+    width: 36px;
+  }
+
+  .btn-header {
+    padding: 0.3rem 0.7rem;
+  }
+
+  .btn-header a,
+  ul,
+  li {
+    font-size: 90%;
+  }
+
+  .text-home h1 {
+    text-align: center;
+  }
+
+  .text-sobre h2 {
+    font-size: 24px;
+  }
+  .text-sobre p {
+    font-size: 80%;
+  }
+
+  .portifolio-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+  }
+
+  .formulario-contato {
+    width: 300px;
+  }
+}
+
+@media (max-width: 590px) {
+  .logo-div a {
+    font-size: 70%;
+  }
+}
